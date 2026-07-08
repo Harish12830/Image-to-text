@@ -6,9 +6,9 @@ import re
 # --- Tesseract path (Windows) ---
 pytesseract.pytesseract.tesseract_cmd = r'C:\Users\Harish\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
 
-st.set_page_config(page_title="OCR Text Extractor", page_icon="📄", layout="centered")
+st.set_page_config(page_title="OCR Text Extractor", layout="centered")
 
-st.title("📄 OCR Text Extractor")
+st.title("OCR Text Extractor")
 st.write("Upload an image and extract text from it using Tesseract OCR.")
 
 # --- File uploader ---
@@ -38,4 +38,4 @@ if uploaded_file is not None:
         mime="text/plain"
     )
 else:
-    st.info("👆 Upload an image to get started.")
+    st.info("Upload an image to get started.")
